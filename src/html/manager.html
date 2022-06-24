@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/manager.js"></script>
+    <link rel="stylesheet" href="../css/manager.css">
+    <title>manager page</title>
+</head>
+
+<body>
+    <h2>manager page</h2>
+    <table class="usersTable">
+        <tr>
+            <th>name</th>
+            <th>BMI</th>
+        </tr>
+    </table>
+    <section>
+        <h3>Filter by:</h3>
+        <div>
+            <input type="text" id="freeSearch" oninput="freeSearch(this.value)" placeholder="free search..">
+            <br>
+            <label for="biggerThan">bigger weight than: </label>
+            <input type="number" id="biggerThan" oninput="biggerWeightThan(this.value)" placeholder="weight">
+            <br>
+            <label for="lowerThan">lower weight than: </label>
+            <input type="number" id="lowerThan" oninput="lowerWeightThan(this.value)" placeholder="weight">
+            <br>
+        </div>
+        <button onclick="addNewMeeting()">add new meeting</button>
+    </section>
+</body>
+
+</html>

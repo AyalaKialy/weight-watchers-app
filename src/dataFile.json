@@ -1,0 +1,106 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "ayala",
+      "lastName": "Levi",
+      "address": {
+        "city": "jerusalem",
+        "street": "arimon",
+        "number": "5"
+      },
+      "phone": "0521369874",
+      "email": "ml@gmail.com",
+      "hight": "1.70",
+      "weight": {
+        "startWeight": 75,
+        "meetings": [
+          {
+            "date": "",
+            "weight": 100
+          },
+          {
+            "date": "",
+            "weight": 110
+          },
+          {
+            "date": "",
+            "weight": 89
+          },
+          {
+            "date": "",
+            "weight": 85
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "firstName": "ayala",
+      "lastName": "Keler",
+      "address": {
+        "city": "jerusalem",
+        "street": "arimon",
+        "number": "5"
+      },
+      "phone": "0558963214",
+      "email": "rk@gmail.com",
+      "hight": "1.75",
+      "weight": {
+        "startWeight": 75,
+        "meetings": [
+          {
+            "date": "",
+            "weight": 100
+          },
+          {
+            "date": "",
+            "weight": 110
+          },
+          {
+            "date": "",
+            "weight": 89
+          },
+          {
+            "date": "",
+            "weight": 90
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "firstName": "ayala",
+      "lastName": "Avitan",
+      "address": {
+        "city": "jerusalem",
+        "street": "arimon",
+        "number": "5"
+      },
+      "phone": "0536985214",
+      "email": "sa@gmail.com",
+      "hight": "1.70",
+      "weight": {
+        "startWeight": 75,
+        "meetings": [
+          {
+            "date": "",
+            "weight": 100
+          },
+          {
+            "date": "",
+            "weight": 110
+          },
+          {
+            "date": "",
+            "weight": 89
+          },
+          {
+            "date": "",
+            "weight": 85
+          }
+        ]
+      }
+    }
+  ]
+}
