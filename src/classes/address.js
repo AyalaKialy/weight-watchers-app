@@ -2,7 +2,6 @@ class Address {
     #city 
     #street
     #number
-    #sdfghj
     constructor(city, street, number) {
         this.#city = city;
         this.#street = street;

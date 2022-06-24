@@ -1,8 +1,16 @@
 
 {
+    "manager": [{
+        "firstName":"manager",
+        "lastName":"Levi",
+        "email":"manager@gmail.com",
+        "password" :"manager1"
+    }
+    ],
+
     "users": [
         {
-            "id": "123456789",
+            "id": "0",
             "firstName":"Miri",
             "lastName":"Levi",
             "address":{
@@ -12,6 +20,7 @@
             },
             "phone":"0521369874",
             "email":"ml@gmail.com",
+            "password" :"55555555",
             "hight":1.70,
             "weight":{
                 "startWeight": 90,
@@ -25,7 +34,7 @@
         },
     
         {
-            "id": "987654321",
+            "id": "1",
             "firstName":"Rachel",
             "lastName":"Keler",
             "address":{
@@ -35,6 +44,7 @@
             },
             "phone":"0558963214",
             "email":"rk@gmail.com",
+            "password" :"6666666666",
             "hight":1.75,
             "weight":{
                 "startWeight": 75,
@@ -48,7 +58,7 @@
         },
     
         {
-            "id": "587412369",
+            "id": "2",
             "firstName":"Shira",
             "lastName":"Avitan",
             "address":{
@@ -58,6 +68,7 @@
             },
             "phone":"0536985214",
             "email":"sa@gmail.com",
+            "password" :"77777777777",
             "hight":1.64,
             "weight":{
                 "startWeight": 80,

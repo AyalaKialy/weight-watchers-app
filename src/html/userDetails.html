@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/userDetails.css"></link>
+    <script src="../classes/user.js"></script>
+    <script src="../classes/manager.js"></script>
+    <script src="../classes/address.js"></script>
+    <script src="../classes/weight.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Details</h1>
+    <div class="details">
+        <div class="right">
+            <label for="id">User id</label>
+            <input type="text" name="id" id="id">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName">
+            <label for="height">height</label>
+            <input type="number" name="height" id="height">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city">
+            <label for="street">Street</label>
+            <input type="text" name="street" id="street">
+            <label for="number">Number</label>
+            <input type="number" name="number" id="number">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="comments">Comments</label>
+            <input style="height:180px;" type="tel" name="comments" id="comments">
+        </div>
+        <div class="left">
+            </div class="currentBmi">
+                <span class="myBmi">My BMI is:</span>
+                <label style="border:none;" type="number" class="bmi" id="BMI"></label>
+            </div>
+
+            <div class="startBmi">
+                <span class="myBmi">My starting BMI:</span>
+                <label style="border:none;" type="number" class="bmi"></label>  
+            </div>
+
+            <div class="currentWeight">
+                <span class="currentWeight">My current weight:</span>
+                <input style="border:none;" type="number" id="currentWeight" name="currentWeight"></input>  
+            </div>
+
+            <div class="startWeight">
+                <span class="startWeight">My starting weight:</span>
+                <label style="border:none;" type="number" id="startWeight"></label>  
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+    </body>
+</html>

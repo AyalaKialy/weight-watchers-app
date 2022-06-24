@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(145, 145, 145);
+    font-family: Calibri;
+}
+h1{
+    text-align: center;
+}
+.details{
+margin-left: 8%;
+
+}
+.right{
+    width: 16%;
+    float: left;
+    margin-bottom: 10%;
+
+}
+.right, input{
+    margin-right: 18%;
+    height: 25px;
+    border-color: rgb(203, 196, 196);
+}
+
+
+
