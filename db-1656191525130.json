@@ -7,7 +7,7 @@
       "password": "manager1"
     }
   ],
-  "users":[
+  "users": [
     {
       "id": "0",
       "firstName": "Miri",
@@ -38,19 +38,7 @@
           }
         ]
       },
-      "comments": "congradulation",
-      "uerToSave": {
-        "firstName": "Miriam",
-        "lastName": "Levi",
-        "city": "jerusalem",
-        "street": "arimon",
-        "number": "5",
-        "phone": "0521369874",
-        "email": "ml@gmail.com",
-        "comments": "congradulation",
-        "hight": "1.7",
-        "currentWeight": "87.9"
-      }
+      "comments": "congradulation"
     },
     {
       "id": "1",

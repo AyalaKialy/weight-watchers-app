@@ -1,5 +1,4 @@
 function login(){
-    debugger
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     const xhr = new XMLHttpRequest();
@@ -10,17 +9,17 @@ function login(){
             alert(`Error:${xhr.status}`); 
         }
         else{
-                debugger
                 const data=JSON.parse(xhr.responseText);
                 if(data.manager[0].email===email && data.manager[0].password===password){
-                    alert(`Manager`); 
+                    if (user.password == "manager1" && user.email =="manager@gmail.com"){
+                        window.location.href = `../html/manager.html`;
+                    }
+                    else {
+                        window.location.href = `../html/userDetails.html/${user.id}`;
+                    } 
                 }
                 else{
-                    for(let i=0; i<data.users.length;i++){ 
-                        if(data.users[i].email===email && data.users[i].password===password){
-                            alert(`User ${data.users[i].firstName}`);
-                        }
-                      }
+                    alert("user not found");
                 }
                   
                   }

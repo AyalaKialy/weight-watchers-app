@@ -8,7 +8,7 @@ class User {
     #email
     #height
     #weight
-    #comments
+    #comments = "no comments"
     #BMI
     constructor(firstName, lastName, address, phone, email, height, weight,comments) {
         this.#id = index++;

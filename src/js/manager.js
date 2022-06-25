@@ -31,7 +31,7 @@ function addUsersToTable(users) {
     <tr class="item">
         <th>${user.firstName + ' ' + user.lastName}</th>
         <th style="color:${c}">${Math.floor(bmi * 100) / 100}</th>
-        <th><a href="/details.html?id=${user.id}">details user</a></th>
+        <th><a href="../html/userDetails.html?id=${user.id}">details user</a></th>
     </tr>`
     })
     const container = document.querySelector('.usersTable');

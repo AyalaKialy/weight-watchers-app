@@ -21,8 +21,7 @@ function getUserById() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
     const user= this.usersArray.filter(user => user.id==id);
-    showUserDetails(user[0])
-
+    showUserDetails(user);
 }
 
 function showUserDetails(currentUser) {
@@ -49,4 +48,46 @@ function showUserDetails(currentUser) {
         const weightsTable=document.getElementById('weights');
         weightsTable.append(element);
     });
+}
+
+
+function editDetails(){
+    debugger
+    document.getElementById("firstName").removeAttribute('readonly');
+    document.getElementById("lastName").removeAttribute('readonly');
+    document.getElementById("hight").removeAttribute('readonly');
+    document.getElementById("city").removeAttribute('readonly');
+    document.getElementById("street").removeAttribute('readonly');
+    document.getElementById("number").removeAttribute('readonly');
+    document.getElementById("phone").removeAttribute('readonly');
+    document.getElementById("email").removeAttribute('readonly');
+    document.getElementById("comments").removeAttribute('readonly');
+}
+
+function saveDetails(){
+    const uerToSave = {
+        firstName : document.getElementById("firstName").value,
+        lastName : document.getElementById("lastName").value,
+        city : document.getElementById("city").value,
+        street : document.getElementById("street").value,
+        number : document.getElementById("number").value,
+        phone : document.getElementById("phone").value,
+        email : document.getElementById("email").value,
+        comments : document.getElementById("comments").value,
+        hight : document.getElementById("hight").value,
+        currentWeight : document.getElementById("currentWeight").innerHTML
+    }
+    const id = document.getElementById("id").value;
+    fetch(`http://localhost:3000/users/${id}`, {
+        method: `PATCH`,
+        body: JSON.stringify({uerToSave}),
+        headers: { 'Content-type': `application/json; charset=UTF-8` },
+    }).then((response) =>{
+        if(response.status ===  200 && response.status !== undefined){
+        alert(`user with id ${id} Updated successfully`)
+        }
+        else{
+            alert(response.message)
+        }
+    })
 }
