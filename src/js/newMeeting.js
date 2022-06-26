@@ -28,6 +28,13 @@ function saveMeeting() {
                 "weight": user.weight,
             }),
             headers: { 'Content-type': `application/json; charset=UTF-8` },
-        }).then((response) => response.json())
+        }).then((response) => {
+            if (response.status === 200 && response.status !== undefined) {
+                alert(`the meeting was successfully added`)
+            }
+            else {
+                alert(response.message)
+            }
+        })
     })
 }

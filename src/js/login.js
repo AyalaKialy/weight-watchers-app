@@ -13,7 +13,7 @@ function login() {
             users.forEach(user => {
                 if (user.email == meansOfIdentification || user.phone == meansOfIdentification) {
                     found = true;
-                    window.location.href = `../html/userDetails.html/${user.id}`;
+                    window.location.href = `../html/userPage.html?id=${user.id}`;
                 }
             }
             );
