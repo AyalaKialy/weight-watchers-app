@@ -13,7 +13,6 @@ window.addEventListener('load', () => {
             usersArray = users;
             sessionStorage.setItem('usersArray', JSON.stringify(users));
             addUsersToTable(users);
-
         }
     }
 

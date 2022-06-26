@@ -1,8 +1,12 @@
 {
+  "manager": {
+    "email": "admin@admin.com",
+    "phone": "0521369874"
+  },
   "users": [
     {
       "id": 1,
-      "firstName": "ayala",
+      "firstName": "Avitan",
       "lastName": "Levi",
       "address": {
         "city": "jerusalem",
@@ -30,13 +34,21 @@
           {
             "date": "",
             "weight": 85
+          },
+          {
+            "date": "2022-06-23",
+            "weight": "85"
+          },
+          {
+            "date": "2022-06-25",
+            "weight": "83"
           }
         ]
       }
     },
     {
       "id": 2,
-      "firstName": "ayala",
+      "firstName": "Bdboy",
       "lastName": "Keler",
       "address": {
         "city": "jerusalem",
@@ -64,13 +76,21 @@
           {
             "date": "",
             "weight": 90
+          },
+          {
+            "date": "2022-06-23",
+            "weight": "90"
+          },
+          {
+            "date": "2022-06-25",
+            "weight": "90"
           }
         ]
       }
     },
     {
       "id": 3,
-      "firstName": "ayala",
+      "firstName": "********",
       "lastName": "Avitan",
       "address": {
         "city": "jerusalem",
@@ -98,6 +118,14 @@
           {
             "date": "",
             "weight": 85
+          },
+          {
+            "date": "2022-06-23",
+            "weight": "85"
+          },
+          {
+            "date": "2022-06-25",
+            "weight": "85"
           }
         ]
       }
