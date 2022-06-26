@@ -11,7 +11,7 @@ function addUsersToTable(users) {
         table += `
     <tr class="item">
         <th>${user.firstName + ' ' + user.lastName}</th>
-        <th><input value="${user.weight.meetings[user.weight.meetings.length - 1].weight}" type="number"></th>  
+        <th><input type="number" id="${user.id}" value="${user.weight.meetings[user.weight.meetings.length - 1].weight}"></th>  
         <th><input></th>
     </tr>`
     })
@@ -20,10 +20,12 @@ function addUsersToTable(users) {
 }
 function saveMeeting() {
     usersArray.forEach(user => {
+        let newMeeting = { "date": document.getElementById("date").value, "weight": document.getElementById(user.id).value };
+        user.weight.meetings.push(newMeeting);
         fetch(`http://localhost:3000/users/${user.id}`, {
             method: `PATCH`,
             body: JSON.stringify({
-                "firstName": "ayala",
+                "weight": user.weight,
             }),
             headers: { 'Content-type': `application/json; charset=UTF-8` },
         }).then((response) => response.json())
