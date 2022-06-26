@@ -1,28 +1,25 @@
-function login(){
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+function login() {
+    const meansOfIdentification = document.getElementById('meansOfIdentification').value;
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "../../dataFile.json", true);
+    xhr.open("GET", 'http://localhost:3000/users');
     xhr.send();
     xhr.onload = () => {
-        if(xhr.status != 200){
-            alert(`Error:${xhr.status}`); 
+        if (xhr.status != 200) {
+            alert(`Error ${xhr.status}: ${xhr.statusText}`);
         }
-        else{
-                const data=JSON.parse(xhr.responseText);
-                if(data.manager[0].email===email && data.manager[0].password===password){
-                    if (user.password == "manager1" && user.email =="manager@gmail.com"){
-                        window.location.href = `../html/manager.html`;
-                    }
-                    else {
-                        window.location.href = `../html/userDetails.html/${user.id}`;
-                    } 
+        else {
+            let found = false;
+            const users = JSON.parse(xhr.responseText);
+            users.forEach(user => {
+                if (user.email == meansOfIdentification || user.phone == meansOfIdentification) {
+                    found = true;
+                    window.location.href = `../html/userDetails.html/${user.id}`;
                 }
-                else{
-                    alert("user not found");
-                }
-                  
-                  }
-                }
+            }
+            );
+            if (!found) {
+                alert('User not found');
+            };
+        }
+    }
 }
-    
