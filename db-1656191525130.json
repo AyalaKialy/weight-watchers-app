@@ -3,10 +3,11 @@
     {
       "firstName": "manager",
       "lastName": "Levi",
-      "email": "manager@gmail.com"
+      "email": "manager@gmail.com",
+      "password": "manager1"
     }
   ],
-  "users":[
+  "users": [
     {
       "id": "0",
       "firstName": "Miri",
@@ -18,6 +19,7 @@
       },
       "phone": "0521369874",
       "email": "ml@gmail.com",
+      "password": "55555555",
       "hight": 1.7,
       "weight": {
         "startWeight": 90,
@@ -36,19 +38,7 @@
           }
         ]
       },
-      "comments": "congradulation",
-      "uerToSave": {
-        "firstName": "Miriam",
-        "lastName": "Levi",
-        "city": "jerusalem",
-        "street": "arimon",
-        "number": "5",
-        "phone": "0521369874",
-        "email": "ml@gmail.com",
-        "comments": "congradulation",
-        "hight": "1.7",
-        "currentWeight": "87.9"
-      }
+      "comments": "congradulation"
     },
     {
       "id": "1",
@@ -61,6 +51,7 @@
       },
       "phone": "0558963214",
       "email": "rk@gmail.com",
+      "password": "6666666666",
       "hight": 1.75,
       "weight": {
         "startWeight": 75,
@@ -92,6 +83,7 @@
       },
       "phone": "0536985214",
       "email": "sa@gmail.com",
+      "password": "77777777777",
       "hight": 1.64,
       "weight": {
         "startWeight": 80,
