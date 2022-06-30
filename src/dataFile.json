@@ -14,11 +14,11 @@
       "address": {
         "city": "jerusalem",
         "street": "arimon",
-        "number": 5
+        "number": "5"
       },
       "phone": "0521369874",
       "email": "ml@gmail.com",
-      "hight": 1.7,
+      "hight": "1.7",
       "weight": {
         "startWeight": 90,
         "meetings": [
@@ -92,7 +92,7 @@
       },
       "phone": "0536985214",
       "email": "sa@gmail.com",
-      "hight": 1.64,
+      "hight": "1.65",
       "weight": {
         "startWeight": 80,
         "meetings": [
