@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nutritionalValues.css">
+    <script src="../js/nutritionalValues.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>ערכים תזונתיים</h1>
+    <label id="search" for="nutritionalValues">חפש ערכים תזונתיים עבור:</label>
+    <form autocomplete="off">
+        <input type="text" name="nutritionalValues" id="nutritionalValues" onKeyUp="showResults(this.value)" placeholder="כתוב מאכל לחיפוש"/>
+        <div id="result"></div>
+    </form>
+    <br/>
+   
+    <div id="showNutritionalValues" ></div>
+    <table id="table" class="nutritionalValuesTable" style="display: none;">
+        <tr>
+            <th>קוד</th>
+            <th>שם </th>
+            <th>אנרגיה</th>
+            <th>סידן</th>
+            <th>פחמימות </th>
+            <th>כולסטרול </th>
+            <th>חומצה פולית</th>
+            <th>ברזל</th>
+            <th>אלכוהול</th>
+            <th>מגנזיום</th>
+            <th>שומן רב בלתי רווי</th>
+            <th>אשלגן</th>
+            <th>חלבון</th>
+            <th>שומן רווי</th>
+            <th>נתרן</th>
+            <th>סך סיבים תזונתיים</th>
+            <th>סך סוכרים</th>
+            <th>C ויטמין </th>
+            <th>D ויטמין </th>
+            <th>אבץ </th>
+
+        </tr>
+    </table>
+</body>
+</html>
