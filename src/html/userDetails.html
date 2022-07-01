@@ -1,11 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/userDetails.css"></link>
+    <link rel="stylesheet" href="../css/userDetails.css">
+    </link>
     <script src="../js/userDetails.js"></script>
     <script src="../classes/user.js"></script>
     <script src="../classes/manager.js"></script>
@@ -19,6 +20,7 @@
         </tr>
     </template>
 </head>
+
 <body>
     <h1 id="userName"></h1>
     <div class="details">
@@ -41,8 +43,6 @@
             <input type="text" name="phone" id="phone" length="10" required readonly="readonly">
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required readonly="readonly">
-            <label for="comments">Comments</label>
-            <input type="tel" name="comments" id="comments" readonly="readonly">
         </div>
         <div class="left">
             <div class="current">
@@ -52,25 +52,28 @@
 
             <div class="current">
                 <span class="currentWeight">My current weight:</span>
-                <label style="border:none;" type="number" id="currentWeight" name="currentWeight"></label>  
+                <label style="border:none;" type="number" id="currentWeight" name="currentWeight"></label>
             </div>
 
             <div class="startWeight">
                 <span class="startWeight">My starting weight:</span>
-                <label style="border:none;" type="number" id="startWeight"></label>  
+                <label style="border:none;" type="number" id="startWeight"></label>
             </div>
         </div>
-            <div class="history">
-                <h2>History meetings</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>date</th>
-                            <th>weight</th>
-                        </tr>
-                    </thead>
-                    <tbody id="weights"></tbody>
-                </table>
-            </div>
-    </body>
+
+        <div class="history">
+            <h2>History meetings</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>date</th>
+                        <th>weight</th>
+                    </tr>
+                </thead>
+                <tbody id="weights"></tbody>
+            </table>
+        </div>
+
+</body>
+
 </html>
