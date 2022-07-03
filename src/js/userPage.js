@@ -1,22 +1,20 @@
-let usersArray = [];
-const params = new URLSearchParams(window.location.search);
-const id = params.get('id');
 
+const url = new URL('http://localhost:3000/users/');
 window.addEventListener('load', () => {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    const newUrl = new URL(id, url);
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://localhost:3000/users/' + id);
+    xhr.open('GET',newUrl);
     xhr.send();
     xhr.onload = () => {
-        if (xhr.status != 200) {
+        if (xhr.status !== 200) {
             alert(`Error ${xhr.status}: ${xhr.statusText}`);
         } else {
-            user = JSON.parse(xhr.responseText);
+            const user = JSON.parse(xhr.responseText);
             showUserDetails(user);
         }
     }
-    document.getElementById('toDiary').addEventListener('click', () => {
-        location.href = '../html/diaryManagment.html?id=' + id;
-    });
 });
 
 function showUserDetails(currentUser) {
@@ -37,7 +35,7 @@ function showUserDetails(currentUser) {
 
     currentUser.weight.meetings.forEach(meeting => {
         const tmp = document.getElementsByTagName('template')[0];
-        let element = tmp.content.cloneNode(true);
+        const element = tmp.content.cloneNode(true);
         element.querySelector('.date').innerText = meeting.date;
         element.querySelector('.weight').innerText = meeting.weight;
         const weightsTable = document.getElementById('weights');
@@ -59,7 +57,7 @@ function editDetails() {
 
 function saveDetails() {
     const id = document.getElementById('id').value;
-    let address = {
+    const address = {
         'city': document.getElementById('city').value,
         'street': document.getElementById('street').value,
         'number': document.getElementById('number').value,
