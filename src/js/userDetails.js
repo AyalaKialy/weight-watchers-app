@@ -1,4 +1,3 @@
-
 const url = new URL('http://localhost:3000/users/');
 window.addEventListener('load', () => {
     const params = new URLSearchParams(window.location.search);
@@ -18,20 +17,20 @@ window.addEventListener('load', () => {
 });
 
 function showUserDetails(currentUser) {
-    document.getElementById('userName').innerHTML=currentUser.firstName +' '+ currentUser.lastName;
-    document.getElementById('id').value =c urrentUser.id;
-    document.getElementById('firstName').value = currentUser.firstName;
-    document.getElementById('lastName').value = currentUser.lastName;
-    document.getElementById('city').value = currentUser.address.city;
-    document.getElementById('street').value = currentUser.address.street;
-    document.getElementById('number').value = currentUser.address.number;
-    document.getElementById('phone').value = currentUser.phone;
-    document.getElementById('email').value = currentUser.email;
-    document.getElementById('comments').value = currentUser.comments;
-    document.getElementById('hight').value = currentUser.hight;
-    document.getElementById('startWeight').innerHTML = currentUser.weight.startWeight;
-    document.getElementById('currentWeight').innerHTML = currentUser.weight.meetings[currentUser.weight.meetings.length-1].weight;
-    document.getElementById('BMI').innerHTML = ((currentUser.weight.meetings[currentUser.weight.meetings.length-1].weight)/Math.pow(currentUser.hight,2)).toFixed(2);
+    document.getElementById('userName').innerHTML=currentUser.firstName+' '+currentUser.lastName;
+    document.getElementById('id').value=currentUser.id;
+    document.getElementById('firstName').value=currentUser.firstName;
+    document.getElementById('lastName').value=currentUser.lastName;
+    document.getElementById('city').value=currentUser.address.city;
+    document.getElementById('street').value=currentUser.address.street;
+    document.getElementById('number').value=currentUser.address.number;
+    document.getElementById('phone').value=currentUser.phone;
+    document.getElementById('email').value=currentUser.email;
+    document.getElementById('comments').value=currentUser.comments;
+    document.getElementById('hight').value=currentUser.hight;
+    document.getElementById('startWeight').innerHTML=currentUser.weight.startWeight;
+    document.getElementById('currentWeight').innerHTML=currentUser.weight.meetings[currentUser.weight.meetings.length-1].weight;
+    document.getElementById('BMI').innerHTML=((currentUser.weight.meetings[currentUser.weight.meetings.length-1].weight)/Math.pow(currentUser.hight,2)).toFixed(2);
 
     currentUser.weight.meetings.forEach(meeting => {
         const tmp=document.getElementsByTagName('template')[0];

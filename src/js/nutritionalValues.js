@@ -14,7 +14,6 @@ window.addEventListener('load', () => {
     foodNames = [...foodNames,food.shmmitzrach]
     });
   });
-  console.log(foodNames);
 });
 
 function showResults(value) {
@@ -95,3 +94,4 @@ function showNutritionalValues(food){
   const container = document.querySelector('.nutritionalValuesTable');
   container.innerHTML += table;
 }
+
