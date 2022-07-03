@@ -1,3 +1,4 @@
+
 const url = new URL('http://localhost:3000/users/');
 window.addEventListener('load', () => {
     const params = new URLSearchParams(window.location.search);
