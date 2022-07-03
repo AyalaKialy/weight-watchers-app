@@ -1,4 +1,4 @@
-let index = 3;
+var index=3;
 class User {
     #id
     #firstName
@@ -10,7 +10,7 @@ class User {
     #weight
     #comments = "no comments"
     #BMI
-    constructor(firstName, lastName, address, phone, email, height, weight, comments) {
+    constructor(firstName, lastName, address, phone, email, height, weight,comments) {
         this.#id = index++;
         this.#firstName = firstName;
         this.#lastName = lastName;
@@ -20,7 +20,7 @@ class User {
         this.#height = height;
         this.#weight = weight;
         this.#comments = comments;
-        this.#BMI = this.#height / Math.pow(this.#weight, 2);
+        this.#BMI = this.#height/Math.pow(this.#weight,2);
     }
 
     set id(id) { this.#id = id; }
@@ -49,7 +49,7 @@ class User {
 
     set comments(comments) { this.#comments = comments; }
     get comments() { return this.#comments; }
-
-    get BMI() { return this.#BMI; }
-
+    
+    get BMI() { return this.#BMI;}
+    
 }

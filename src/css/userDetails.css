@@ -1,40 +1,35 @@
-body {
+body{
     font-family: sans-serif;
     background-color: rgba(210, 206, 206, 0.965);
     color: rgb(51, 51, 51);
 }
-
-h1 {
+h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(249, 137, 52);
     font-size: 70px;
     text-align: center;
 }
-
-.details {
-    margin-left: 8%;
+.details{
+margin-left: 8%;
 
 }
-
-.right {
+.right{
     width: 16%;
     float: left;
     margin-bottom: 10%;
 
 }
-
-.right,
-input {
+.right, input{
     margin-right: 18%;
     height: 25px;
     border-color: rgb(203, 196, 196);
 }
 
-.current {
+.current{
     font-size: large;
 }
 
-table {
+table{
     border: 4px solid rgb(249, 137, 52);
     border-collapse: collapse;
 }
@@ -42,44 +37,32 @@ table {
 tr,
 td {
     padding: 8px;
-    float: inline-start;
+    float:inline-start;
 }
-
-.left {
+.left{
     float: left;
 }
-
-.saveButton {
-    background-color: rgb(249, 137, 52);
-    font-size: 15px;
-    border-radius: 300px;
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 20px;
+.saveButton{
+        background-color: rgb(249, 137, 52);
+        font-size: 15px;
+        border-radius: 300px;
+        border: none;
+        margin-top: 10px;
+        margin-bottom: 20px;
 
 
 }
-
-.history {
+.history{
     float: right;
     margin-right: 10%;
 }
 
-.inputClass:read-only {
+.inputClass:read-only{
     background-color: rgb(165, 168, 170);
 }
 
-.inputClass {
+.inputClass{
     background-color: rgb(255, 255, 255);
 
 }
 
-button {
-    margin-top: 50px;
-    background-color: rgb(249, 137, 52);
-    padding: 10px 18px;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 300px;
-    border: none;
-}
