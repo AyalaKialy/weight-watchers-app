@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
     const id = params.get('id');
     const newUrl = new URL(id, url);
     const xhr = new XMLHttpRequest();
-    xhr.open('GET',newUrl);
+    xhr.open('GET', newUrl);
     xhr.send();
     xhr.onload = () => {
         if (xhr.status !== 200) {
@@ -15,6 +15,12 @@ window.addEventListener('load', () => {
             showUserDetails(user);
         }
     }
+    document.getElementById('toDiary').addEventListener('click', () => {
+        window.location.href = `../html/diaryManagment.html?id=${id}`;
+    });
+    document.getElementById('toNutritionalValues').addEventListener('click', () => {
+        window.location.href = `../html/nutritionalValues.html`;
+    });
 });
 
 function showUserDetails(currentUser) {
