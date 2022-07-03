@@ -1,6 +1,5 @@
 let foodNames = [];
-const url = new URL (`https://data.gov.il/api/3/action/datastore_search?resource_id=c3cb0630-0650-46c1-a068-82d575c094b2` )
-
+const url = new URL (`https://data.gov.il/api/3/action/datastore_search?resource_id=c3cb0630-0650-46c1-a068-82d575c094b2&limit=4630` );
 const options = {
   method: 'GET',
   headers: {}
@@ -15,6 +14,7 @@ window.addEventListener('load', () => {
     foodNames = [...foodNames,food.shmmitzrach]
     });
   });
+  console.log(foodNames);
 });
 
 function showResults(value) {
@@ -23,7 +23,7 @@ function showResults(value) {
   let list = '';
   let terms = autocompleteMatch(value);
   for (i=0; i<terms.length; i++) {
-    list += `<li onclick='selectedItem('${terms[i]}')'> ${terms[i]} </li>`;
+    list += `<li onclick="selectedItem('${terms[i]}')"> ${terms[i]} </li>`;
   }
   result.innerHTML = `<ul> ${list} </ul>`;
 }
@@ -95,5 +95,3 @@ function showNutritionalValues(food){
   const container = document.querySelector('.nutritionalValuesTable');
   container.innerHTML += table;
 }
-
-
