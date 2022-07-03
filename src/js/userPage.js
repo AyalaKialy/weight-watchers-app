@@ -1,8 +1,5 @@
-const url = new URL('http://localhost:3000/users/');
-let usersArray = [];
-const params = new URLSearchParams(window.location.search);
-const id = params.get('id');
 
+const url = new URL('http://localhost:3000/users/');
 window.addEventListener('load', () => {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
