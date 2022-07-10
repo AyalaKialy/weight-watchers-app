@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/diaryManagment.css">
+    <script src="../js/diaryManagment.js"></script>
+    <title>diary management</title>
+</head>
+
+<body>
+    <h2>my diary management</h2>
+    <table id="table">
+        <tr class="tr1">
+            <th>date</th>
+            <th>breakfast</th>
+            <th>lunch</th>
+            <th>dinner</th>
+            <th>between meals</th>
+
+        </tr>
+    </table>
+    <button type='button' id='addingSummery'>Adding a meals summary</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Summarize your meals on this day</h3>
+            <h4>Please include foods with a space between them</h4>
+            <input type='date' id='currentDate' /></th>
+            <input type='text' id='breakfast' placeholder='Breakfast' /></th>
+            <input type='text' id='lunch' placeholder='Lunch' /></th>
+            <input type='text' id='dinner' placeholder='Dinner' /></th>
+            <input type='text' id='snackingBetweenMeals' placeholder='Snacking between meals' /></th>
+            <button class='buttonInTable' onclick='saveData()'>save</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

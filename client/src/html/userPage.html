@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/userDetails.css">
+    </link>
+    <script src="../js/userPage.js"></script>
+    <script src="../classes/user.js"></script>
+    <script src="../classes/manager.js"></script>
+    <script src="../classes/address.js"></script>
+    <script src="../classes/weight.js"></script>
+    <title>Document</title>
+    <template>
+        <tr>
+            <td class="date"></td>
+            <td class="weight"></td>
+        </tr>
+    </template>
+</head>
+
+<body>
+    <h1 id="userName"></h1>
+    <div class="details">
+        <div class="right">
+            <label for="id">User id</label>
+            <input type="text" name="id" id="id" readonly="readonly" style=" background-color: rgb(165, 168, 170)">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" minlength="2" maxlength="20" readonly="readonly"
+                class="inputClass">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" minlength="2" maxlength="20" readonly="readonly"
+                class="inputClass">
+            <label for="hight">hight</label>
+            <input type="number" name="height" id="hight" min="1.00" required readonly="readonly" class="inputClass">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" minlength="2" maxlength="30" readonly="readonly"
+                class="inputClass">
+            <label for="street">Street</label>
+            <input type="text" name="street" id="street" minlength="2" maxlength="30" readonly="readonly"
+                class="inputClass">
+            <label for="number">Number</label>
+            <input type="number" name="number" id="number" min="1.0" readonly="readonly" class="inputClass">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" length="10" required readonly="readonly" class="inputClass">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required readonly="readonly" class="inputClass">
+            <label for="comments">Comments</label>
+            <input type="tel" name="comments" id="comments" readonly="readonly" class="inputClass">
+            <input onclick="editDetails()" class="saveButton" type="button" id="edit details" value="edit details">
+            <input onclick="saveDetails()" class="saveButton" type="button" id="save details" value="Save details">
+
+        </div>
+        <div class="left">
+            <div class="current">
+                <span class="myBmi">My BMI is:</span>
+                <label style="border:none;" type="number" class="bmi" id="BMI"></label>
+            </div>
+
+            <div class="current">
+                <span class="currentWeight">My current weight:</span>
+                <label style="border:none;" type="number" id="currentWeight" name="currentWeight"></label>
+            </div>
+
+            <div class="startWeight">
+                <span class="startWeight">My starting weight:</span>
+                <label style="border:none;" type="number" id="startWeight"></label>
+            </div>
+            <button type="button" id="toDiary">to my diary management</button>
+            <button type="button" id="toNutritionalValues">to nutritional values page</button>
+
+        </div>
+        <div class="history">
+            <h2>History meetings</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>date</th>
+                        <th>weight</th>
+                    </tr>
+                </thead>
+                <tbody id="weights"></tbody>
+            </table>
+        </div>
+</body>
+
+</html>
