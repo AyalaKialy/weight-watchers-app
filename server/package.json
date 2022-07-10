@@ -1,0 +1,36 @@
+{
+  "name": "bootcamp-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanakamin/bootcamp-template.git"
+  },
+  "author": "chana kaminetzki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chanakamin/bootcamp-template/issues"
+  },
+  "homepage": "https://github.com/chanakamin/bootcamp-template#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "eslint": "^8.17.0",
+    "express": "^4.18.1",
+    "fs.promises": "^0.1.2",
+    "http-server": "^14.1.1",
+    "json-server": "^0.17.0",
+    "logger": "^0.0.1",
+    "moment": "^2.29.3",
+    "node-module": "^2.0.0",
+    "nodemon": "^2.0.18",
+    "path": "^0.12.7",
+    "timestamp": "^0.0.1",
+    "winston": "^3.8.1",
+    "winston-mongodb": "^5.0.7"
+  }
+}
