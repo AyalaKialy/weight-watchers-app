@@ -17,9 +17,9 @@ app.use((err, req, res, next) => {
     if (ENVIRONMENT === 'development')
         logger.error(err.message)
     else {
-        res.status(500).send(err.message)
         logger.error(`${error}`)
     }
+    res.status(500).send(err.message)
     next();
 })
 

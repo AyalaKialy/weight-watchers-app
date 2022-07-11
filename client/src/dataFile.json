@@ -18,7 +18,7 @@
       },
       "phone": "0521369874",
       "email": "ml@gmail.com",
-      "hight": "1.7",
+      "height": "1.7",
       "weight": {
         "startWeight": 90,
         "meetings": [
@@ -31,6 +31,11 @@
             "date": "12/03/2022",
             "weight": 88.8,
             "comments": "no comments"
+          },
+          {
+            "date": "2022-08-16",
+            "weight": "88.8",
+            "comments": ""
           }
         ]
       },
@@ -90,7 +95,7 @@
       },
       "phone": "0558963214",
       "email": "rk@gmail.com",
-      "hight": "1.75",
+      "height": "1.75",
       "weight": {
         "startWeight": 75,
         "meetings": [
@@ -118,6 +123,11 @@
             "date": "2022-06-30",
             "weight": "73.9",
             "comments": "no comments"
+          },
+          {
+            "date": "2022-08-16",
+            "weight": "73.9",
+            "comments": ""
           }
         ]
       }
@@ -133,7 +143,7 @@
       },
       "phone": "0536985214",
       "email": "sa@gmail.com",
-      "hight": "1.65",
+      "height": "1.65",
       "weight": {
         "startWeight": 80,
         "meetings": [
@@ -161,6 +171,11 @@
             "date": "2022-06-30",
             "weight": "90.9",
             "comments": "no comments"
+          },
+          {
+            "date": "2022-08-16",
+            "weight": "90.9",
+            "comments": ""
           }
         ]
       }

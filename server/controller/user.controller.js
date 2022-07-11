@@ -3,8 +3,8 @@ const service = require('../service/user.service');
 module.exports = {
     getAllUsers: async (req, res, next) => {
         try {
-            if (req.query.meansOfIdentification) {
-                const meansOfIdentification = req.query.meansOfIdentification;
+            const meansOfIdentification = req.query.meansOfIdentification;
+            if (meansOfIdentification) {
                 const user = await service.MeansOfIdentification(meansOfIdentification);
                 res.send(user)
             }

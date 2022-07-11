@@ -40,8 +40,8 @@ function showUserDetails(currentUser) {
     document.getElementById('BMI').innerHTML = ((currentUser.weight.meetings[currentUser.weight.meetings.length - 1].weight) / Math.pow(currentUser.hight, 2)).toFixed(2);
 
     currentUser.weight.meetings.forEach(meeting => {
-        const tmp = document.getElementsByTagName('template')[0];
-        const element = tmp.content.cloneNode(true);
+        const template = document.getElementsByTagName('template')[0];
+        const element = template.content.cloneNode(true);
         element.querySelector('.date').innerText = meeting.date;
         element.querySelector('.weight').innerText = meeting.weight;
         const weightsTable = document.getElementById('weights');

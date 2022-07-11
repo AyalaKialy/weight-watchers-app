@@ -4,24 +4,32 @@ const options = {
   method: 'GET',
   headers: {}
 };
-
-window.addEventListener('load', () => {
-  fetch(url, options)
-  .then(response => response.json())
-  .then(response => {
-    const foods = response.result.records;
-    foods.forEach(food => {
-    foodNames = [...foodNames,food.shmmitzrach]
-    });
+window.addEventListener('load',async () => {
+  let response = await fetch(url, options);
+  response = await response.json();
+  debugger
+  const foods = response.result.records;
+  foods.forEach(food => {
+  foodNames = [...foodNames,food.shmmitzrach]
   });
 });
+// window.addEventListener('load', async() => {
+//   await fetch(url, options)
+//   .then(response => response.json())
+//   .then(response => {
+//     const foods = response.result.records;
+//     foods.forEach(food => {
+//     foodNames = [...foodNames,food.shmmitzrach]
+//     });
+//   });
+// });
 
 function showResults(value) {
   let result = document.getElementById('result');
   result.innerHTML = '';
   let list = '';
   let terms = autocompleteMatch(value);
-  for (i=0; i<terms.length; i++) {
+  for (let i = 0; i < terms.length; i++) {
     list += `<li onclick="selectedItem('${terms[i]}')"> ${terms[i]} </li>`;
   }
   result.innerHTML = `<ul> ${list} </ul>`;
@@ -36,7 +44,7 @@ function selectedItem(item) {
 }
 
 function autocompleteMatch(input) {
-  if (input === '') {
+  if (!input) {
     return [];
   }
   let reg = new RegExp(input)
