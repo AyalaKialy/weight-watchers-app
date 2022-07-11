@@ -17,16 +17,6 @@ module.exports = {
             next(error)
         };
     },
-    getAllOrderByUserId: async (req, res, next) => {
-        try {
-            const userId = req.params.id;
-            const id = await userModel.findOne({ _id: userId }).populate({ path: 'allOrdersByUserId', select: 'userID date amount products' });
-            await res.send(id);
-        }
-        catch (error) {
-            next(error)
-        }
-    },
     getUserById: async (req, res, next) => {
         try {
             const id = req.params.id;

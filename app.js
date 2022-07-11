@@ -6,10 +6,12 @@ const logger = require('./configuration');
 const path = require('path')
 
 const user = require('./src/server/router/user.router');
+const meeting = require('./src/server/router/meeting.router');
 
 app.use(express.json());
 
 app.use('/api/user', user);
+app.use('/api/meeting', meeting);
 
 // app.use((err, req, res) => {
 //     if (ENVIRONMENT === 'development')

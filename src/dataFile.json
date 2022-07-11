@@ -1,128 +1,85 @@
 {
-    "manager": [
-        {
-            "firstName": "manager",
-            "lastName": "Levi",
-            "email": "manager@gmail.com"
-        }
-    ],
-    "users": [
-        {
-            "id": "0",
-            "firstName": "MMi",
-            "lastName": "Levi",
-            "address": {
-                "city": "jerusalem",
-                "street": "arimon",
-                "number": 5
-            },
-            "phone": "0521369874",
-            "email": "ml@gmail.com",
-            "hight": 1.7,
-            "weight": {
-                "startWeight": 90,
-                "meetings": [
-                    {
-                        "date": "12/03/2022",
-                        "weight": 89.8
-                    },
-                    {
-                        "date": "12/03/2022",
-                        "weight": 88.8
-                    },
-                    {
-                        "date": "12/03/2022",
-                        "weight": 87.9
-                    }
-                ]
-            },
-            "comments": "congradulation"
-        },
-        {
+  "manager": [
+    { "firstName": "manager", "lastName": "Levi", "email": "manager@gmail.com" }
+  ],
+  "users": [
+    {
+      "id": "0",
+      "firstName": "MMi",
+      "lastName": "Levi",
+      "address": { "city": "jerusalem", "street": "arimon", "number": 5 },
+      "phone": "0521369874",
+      "email": "ml@gmail.com",
+      "hight": 1.7,
+      "weight": {
+        "startWeight": 90,
+        "meetings": [
+          {
             "id": "1",
-            "firstName": "Rachel",
-            "lastName": "Keler",
-            "address": {
-                "city": "jerusalem",
-                "street": "arimon",
-                "number": "5"
-            },
-            "phone": "0558963214",
-            "email": "rk@gmail.com",
-            "hight": "1.75",
-            "weight": {
-                "startWeight": 75,
-                "meetings": [
-                    {
-                        "date": "12/03/2022",
-                        "weight": 74.5,
-                        "comments": "no comments"
-                    },
-                    {
-                        "date": "12/03/2022",
-                        "weight": 75,
-                        "comments": "no comments"
-                    },
-                    {
-                        "date": "12/03/2022",
-                        "weight": 73.9,
-                        "comments": "no comments"
-                    },
-                    {
-                        "date": "2022-06-09",
-                        "weight": "73.9",
-                        "comments": "no comments"
-                    },
-                    {
-                        "date": "2022-06-30",
-                        "weight": "73.9",
-                        "comments": "no comments"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "2",
-            "firstName": "Shira",
-            "lastName": "Avitan",
-            "address": {
-                "city": "jerusalem",
-                "street": "arimon",
-                "number": "5"
-            },
-            "phone": "0536985214",
-            "email": "sa@gmail.com",
-            "hight": "1.65",
-            "weight": {
-                "startWeight": 80,
-                "meetings": [
-                    {
-                        "date": "12/03/2022",
-                        "weight": 60,
-                        "comments": "no comments"
-                    },
-                    {
-                        "date": "12/03/2022",
-                        "weight": 61.8,
-                        "comments": "no comments"
-                    },
-                    {
-                        "date": "12/03/2022",
-                        "weight": 60.9,
-                        "comments": "no comments"
-                    },
-                    {
-                        "date": "2022-06-09",
-                        "weight": "90.9",
-                        "comments": "no comments"
-                    },
-                    {
-                        "date": "2022-06-30",
-                        "weight": "90.9",
-                        "comments": "no comments"
-                    }
-                ]
-            }
-        }
-    ]
+            "date": "12/03/22",
+            "weight": 90.8,
+            "comments": "no comments"
+          },
+          {
+            "id": "4",
+            "date": "18/04/22",
+            "weight": 90.8,
+            "comments": "no comments"
+          }
+        ]
+      }
+    },
+    {
+      "id": "1",
+      "firstName": "Rachel",
+      "lastName": "Keler",
+      "address": { "city": "jerusalem", "street": "arimon", "number": "5" },
+      "phone": "0558963214",
+      "email": "rk@gmail.com",
+      "hight": "1.75",
+      "weight": {
+        "startWeight": 75,
+        "meetings": [
+          {
+            "id": "1",
+            "date": "12/03/22",
+            "weight": 100.8,
+            "comments": "no comments"
+          },
+          {
+            "id": "4",
+            "date": "18/04/22",
+            "weight": 100.8,
+            "comments": "no comments"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "firstName": "Shira",
+      "lastName": "Avitan",
+      "address": { "city": "jerusalem", "street": "arimon", "number": "5" },
+      "phone": "0536985214",
+      "email": "sa@gmail.com",
+      "hight": "1.65",
+      "weight": {
+        "startWeight": 80,
+        "meetings": [
+          {
+            "id": "1",
+            "date": "12/03/22",
+            "weight": 70.8,
+            "comments": "no comments"
+          },
+          {
+            "id": "4",
+            "date": "18/04/22",
+            "weight": 70.8,
+            "comments": "no comments"
+          }
+        ]
+      }
+    }
+  ]
 }
